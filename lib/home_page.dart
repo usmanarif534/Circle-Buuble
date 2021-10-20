@@ -8,7 +8,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
-      body: SafeArea(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        title: const Text('Circle Bubble',style: TextStyle(color: Colors.blue),),
+      ),
+      body: const SafeArea(
         child: CircleBubble()
       ),
     );
